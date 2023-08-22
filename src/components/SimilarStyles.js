@@ -1,4 +1,4 @@
-import { Avatar, Box, Card, CardActions, CardMedia, Stack, ThemeProvider, Typography, createTheme } from "@mui/material";
+import { Avatar, Box, Button, Card, CardActions, CardMedia, Stack, ThemeProvider, Typography, createTheme } from "@mui/material";
 
 import blueStyle from '../static/images/blueTshirt1.png';
 import greenStyle from '../static/images/greenTshirt.png'
@@ -45,6 +45,7 @@ export default function SimilarStyles(props) {
                         />
                         <CardActions>
                             <Stack direction="row" spacing={1}>
+                                <Button onClick={props.handlePocketTshirtSelected}></Button>
                                 <Avatar
                                     alt="Remy Sharp"
                                     src={green}

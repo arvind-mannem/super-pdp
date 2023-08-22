@@ -37,7 +37,7 @@ export default function Metadata(props) {
                     <Box sx={{ gridRow: '1', gridColumn: 'span 3' }}>
                         <Typography variant="h6" gutterBottom>
                             <b>
-                                {props.isPocketTshirtSelected ? 'Original T-Shirt' : props.styleData.styleName}
+                                {props.isPocketTshirtSelected ?  props.styleData.styleName : 'Original T-Shirt'}
                             </b>
                         </Typography>
                     </Box>
@@ -58,7 +58,7 @@ export default function Metadata(props) {
                         $19.95
                     </Typography>
                     <Typography variant="caption" display="block" gutterBottom>
-                        {props.isPocketTshirtSelected ? 'Original T-Shirt' : props.styleData.styleDesc}
+                        {props.isPocketTshirtSelected ?  props.styleData.styleDesc : 'Original T-Shirt'}
                     </Typography>
                 </Box>
                 <Typography sx={{ marginLeft: 2, marginRight: 2 }} variant="body2" display="block" gutterBottom>

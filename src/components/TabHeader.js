@@ -3,7 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
-import gapLogo from '../static/images/gapLogo.png';
+import logo from '../static/images/logo.png';
 
 export default function TabHeader() {
   const [value, setValue] = React.useState('Men');
@@ -20,8 +20,8 @@ export default function TabHeader() {
       >
         <Avatar
           alt="Remy Sharp"
-          src={gapLogo}
-          sx={{ width: 56, height: 56 }}
+          src={logo}
+          sx={{ width: 70, height: 56 }}
         />
         <Tab value="New" label="New" />
         <Tab value="Men" label="Men" />
